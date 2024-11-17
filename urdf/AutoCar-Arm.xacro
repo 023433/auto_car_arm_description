@@ -7,7 +7,7 @@
 
 <xacro:include filename="$(find auto_car_arm_description)/urdf/open_manipulator_x.urdf.xacro" />
 
-<joint name="joint_arm" type="continuous">
+<joint name="joint_arm" type="fixed">
   <origin xyz="0.1525 0.0 0.246" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="arm_1"/>
