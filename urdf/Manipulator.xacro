@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="arm" >
+ 
+  <xacro:include filename="$(find open_manipulator_x_description)/urdf/open_manipulator_x.urdf.xacro" />
+ 
+  <link name="l_world" />
+ 
+  <joint name="l_world_joint" type="fixed">
+    <parent link="l_world" />
+    <child link = "l_base_link" />  <!--"l_base_link" is follow the prefix setting.-->
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+ 
+</robot>
